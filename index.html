@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>School Schedule</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #ffa500;
+            color: white;
+        }
+        td {
+            background-color: #87ceeb;
+        }
+        tr:nth-child(even) td {
+            background-color: #ff69b4;
+        }
+        tr:hover td {
+            background-color: #ffd700;
+        }
+        .rowspan-cell {
+            background-color: #90ee90;
+        }
+    </style>
+</head>
+<body>
+    <h2>School Schedule</h2>
+    <table>
+        <tr>
+            <th>Hour</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+        <tr>
+            <th>1</th>
+            <td>Chemistry</td>
+            <td>Physics</td>
+            <td>Mathematics</td>
+            <td>Native Language</td>
+            <td>German</td>
+        </tr>
+        <tr>
+            <th>2</th>
+            <td>English Language</td>
+            <td>Physical Education</td>
+            <td>Computer Science</td>
+            <td>Biology</td>
+            <td>Serbian Language and Literature</td>
+        </tr>
+        <tr>
+            <th rowspan="2">3</th>
+            <td class="rowspan-cell" rowspan="2">Technical and Computer Education</td>
+            <td>Art</td>
+            <td>History</td>
+            <td>Mathematics</td>
+            <td>Geography</td>
+        </tr>
+        <tr>
+            <td>Music Education</td>
+            <td>Psychology</td>
+            <td>Civic Education</td>
+            <td>English Language</td>
+        </tr>
+        <tr>
+            <th>4</th>
+            <td>Serbian Language and Literature</td>
+            <td>Geography</td>
+            <td>German</td>
+            <td>German</td>
+            <td>Chemistry</td>
+        </tr>
+    </table>
+    <p>Author: Stefan Dimitrijević, Programmer</p>
+</body>
+</html>
